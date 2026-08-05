@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Position — Job Application</title>
+</head>
+<body>
+  <header>
+    <h1>Position &amp; Preferences</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="personal-information.html">Personal</a></li>
+        <li><a href="position.html">Position</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education-skills.html">Education &amp; Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="experience.html" method="get">
+      <fieldset>
+        <legend>Role information</legend>
+
+        <label for="role">Role you are applying for <span aria-hidden="true">*</span></label>
+        <input id="role" name="role" type="text" required aria-required="true">
+
+        <label>Employment type <span aria-hidden="true">*</span></label>
+        <div>
+          <input type="radio" id="fulltime" name="employment" value="fulltime" required aria-required="true">
+          <label for="fulltime">Full-time</label>
+        </div>
+        <div>
+          <input type="radio" id="parttime" name="employment" value="parttime">
+          <label for="parttime">Part-time</label>
+        </div>
+        <div>
+          <input type="radio" id="contract" name="employment" value="contract">
+          <label for="contract">Contract</label>
+        </div>
+
+        <label for="startDate">Earliest start date</label>
+        <input id="startDate" name="startDate" type="date">
+      </fieldset>
+
+      <fieldset>
+        <legend>Salary expectations</legend>
+        <label for="salary">Salary (USD per year)</label>
+        <input id="salary" name="salary" type="number" min="0" step="1000" aria-describedby="salaryHelp">
+        <div id="salaryHelp">Enter numbers only; use whole dollars.</div>
+      </fieldset>
+
+      <button type="submit">Continue to Experience</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; Application</p>
+  </footer>
+</body>
+</html>

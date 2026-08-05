@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Education &amp; Skills — Job Application</title>
+  </head>
+<body>
+  <header>
+    <h1>Education &amp; Skills</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="personal-information.html">Personal</a></li>
+        <li><a href="position.html">Position</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education-skills.html">Education &amp; Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Education</legend>
+
+        <label for="degree">Highest degree <span aria-hidden="true">*</span></label>
+        <select id="degree" name="degree" required aria-required="true">
+          <option value="">Choose...</option>
+          <option>Bachelor's</option>
+          <option>Master's</option>
+          <option>PhD</option>
+          <option>Other</option>
+        </select>
+
+        <label for="school">Institution <span aria-hidden="true">*</span></label>
+        <input id="school" name="school" type="text" required aria-required="true">
+      </fieldset>
+
+      <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">List key skills and tools <span aria-hidden="true">*</span></label>
+        <textarea id="skills" name="skills" rows="5" required aria-required="true" aria-describedby="skillsHelp"></textarea>
+        <div id="skillsHelp">Briefly list tools and areas of expertise (comma-separated).</div>
+
+        <div>
+          <input type="checkbox" id="relocate" name="relocate" value="yes">
+          <label for="relocate">Willing to relocate</label>
+        </div>
+      </fieldset>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; Application</p>
+  </footer>
+</body>
+</html>

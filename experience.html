@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Experience — Job Application</title>
+</head>
+<body>
+  <header>
+    <h1>Experience</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="personal-information.html">Personal</a></li>
+        <li><a href="position.html">Position</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education-skills.html">Education &amp; Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="education-skills.html" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Work history</legend>
+
+        <label for="company">Most recent company <span aria-hidden="true">*</span></label>
+        <input id="company" name="company" type="text" required aria-required="true">
+
+        <label for="title">Job title <span aria-hidden="true">*</span></label>
+        <input id="title" name="title" type="text" required aria-required="true">
+
+        <label for="years">Years of relevant experience</label>
+        <input id="years" name="years" type="number" min="0" max="60" required aria-required="true">
+
+        <label for="resume">Upload resume (PDF) <span aria-hidden="true">*</span></label>
+        <input id="resume" name="resume" type="file" accept="application/pdf" required aria-describedby="resumeHelp">
+        <div id="resumeHelp">Accepts PDF only. File size limits depend on server; keep resume under 5MB if possible.</div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Portfolio or additional files</legend>
+        <label for="portfolioFile">Supplementary file (optional)</label>
+        <input id="portfolioFile" name="portfolioFile" type="file" accept="image/*,application/pdf" aria-describedby="portfolioHelp">
+        <div id="portfolioHelp">Optional: screenshots, case studies, or PDFs under 5MB.</div>
+      </fieldset>
+
+      <button type="submit">Continue to Education &amp; Skills</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; Application</p>
+  </footer>
+</body>
+</html>

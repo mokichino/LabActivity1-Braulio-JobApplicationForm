@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Personal Information — Job Application</title>
+</head>
+<body>
+  <header>
+    <h1>Personal Information</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="personal-information.html">Personal</a></li>
+        <li><a href="position.html">Position</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education-skills.html">Education &amp; Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="position.html" method="get" novalidate>
+      <fieldset>
+        <legend>Contact details</legend>
+
+        <label for="fullName">Full name <span aria-hidden="true">*</span></label>
+        <input id="fullName" name="fullName" type="text" required minlength="2" maxlength="100" aria-required="true">
+
+        <label for="email">Email address <span aria-hidden="true">*</span></label>
+        <input id="email" name="email" type="email" required aria-required="true" aria-describedby="emailHelp">
+        <div id="emailHelp">We will use this email to contact you about your application.</div>
+
+        <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+        <input id="phone" name="phone" type="tel" pattern="^[0-9()+\-\s]+$" required aria-required="true" aria-describedby="phoneHelp">
+        <div id="phoneHelp">Include country code if outside the US (numbers, spaces, parentheses, + and - allowed).</div>
+
+        <label for="linkedin">LinkedIn (optional)</label>
+        <input id="linkedin" name="linkedin" type="url" placeholder="https://">
+      </fieldset>
+
+      <fieldset>
+        <legend>Location</legend>
+        <label for="city">City <span aria-hidden="true">*</span></label>
+        <input id="city" name="city" type="text" required aria-required="true">
+
+        <label for="country">Country <span aria-hidden="true">*</span></label>
+        <input id="country" name="country" type="text" required aria-required="true">
+      </fieldset>
+
+      <button type="submit">Continue to Position</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; Application</p>
+  </footer>
+</body>
+</html>
